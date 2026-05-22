@@ -2,7 +2,7 @@ import jwt from 'jsonwebtoken';
 import bcrypt from 'bcrypt';
 import { cookies } from 'next/headers';
 
-const JWT_SECRET = process.env.JWT_SECRET;
+const JWT_SECRET = process.env.JWT_SECRET as string;
 
 if (!JWT_SECRET) {
   throw new Error('JWT_SECRET environment variable is required');
@@ -28,8 +28,8 @@ export function generateToken(userId: number, nome: string): string {
 
 export function verifyToken(token: string): { userId: number; nome: string } | null {
   try {
-    const decoded = jwt.verify(token, JWT_SECRET);
-    return decoded as { userId: number; nome: string };
+    const decoded = jwt.verify(token, JWT_SECRET) as { userId: number; nome: string };
+    return decoded;
   } catch {
     return null;
   }
