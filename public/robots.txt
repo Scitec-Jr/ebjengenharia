@@ -2,5 +2,3 @@ User-agent: *
 Allow: /
 Disallow: /api/
 Disallow: /adm/
-
-Sitemap: https://ebjengenharia.com.br/sitemap.xml
