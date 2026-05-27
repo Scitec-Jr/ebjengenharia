@@ -27,6 +27,13 @@ export async function proxy(request: NextRequest) {
 			return NextResponse.next();
 		}
 
+		if (
+			pathname === "/api/user" &&
+			method === "POST"
+		) {
+			return NextResponse.next();
+		}
+
 		const token = request.cookies.get("auth-token")?.value;
 
 		if (!token) {
