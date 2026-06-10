@@ -55,10 +55,17 @@ export default function ProjetoDetail({ servico }: ProjetoDetailProps) {
 					)}
 
 					<div className="flex items-end justify-between">
-						<div>
-							<h2 className="mb-4 text-2xl text-(--secondary-color)">À venda por:</h2>
-							<span className="block w-fit px-4 py-2 bg-(--secondary-color) text-2xl text-white">{formatarValor(servico.valor)}</span>
-						</div>
+						{servico.status_venda && (
+							<div>
+								<h2 className="mb-4 text-2xl text-(--secondary-color)">
+									À venda por:
+								</h2>
+						
+								<span className="block w-fit px-4 py-2 bg-(--secondary-color) text-2xl text-white">
+									{formatarValor(servico.valor)}
+								</span>
+							</div>
+						)}
 
 						<p>Entre em contato</p>
 
