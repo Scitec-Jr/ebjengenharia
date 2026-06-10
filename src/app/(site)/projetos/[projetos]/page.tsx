@@ -6,9 +6,9 @@ import type { Servico } from "@/types/servico";
 
 async function fetchServicos() {
 	try {
-		const response = await fetch("http://localhost:3000/api/servicos", {
+		const response = await fetch("http://ebjengenharia.com.br/api/servicos", {
 			next: {
-				revalidate: 3600,
+				revalidate: 60,
 				tags: ["servicos"],
 			},
 		});
