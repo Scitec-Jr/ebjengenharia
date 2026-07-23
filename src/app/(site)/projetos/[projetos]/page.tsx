@@ -103,7 +103,7 @@ export default async function Projeto({ params }: ProjetoPageProps) {
 	if (errorMessage || !servico) {
 		return (
 			<main className="pt-4">
-				<section className="max-w-360 mx-auto">
+				<section className="max-w-440 mx-auto">
 					<div className="px-4 md:px-8 lg:px-16">
 						<ProjetoError error={errorMessage || "Erro ao carregar projeto"} />
 					</div>
@@ -114,7 +114,7 @@ export default async function Projeto({ params }: ProjetoPageProps) {
 
 	return (
 		<main className="pt-4">
-			<section className="max-w-360 mx-auto">
+			<section className="max-w-440 mx-auto">
 				<div className="px-4 md:px-8 lg:px-16">
 					<ProjetoDetail servico={servico} />
 				</div>

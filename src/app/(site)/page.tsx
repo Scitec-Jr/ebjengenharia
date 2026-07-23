@@ -12,7 +12,7 @@ export const metadata: Metadata = {
 export default function Home() {
 	return (
 		<main>
-			<section className="relative max-w-360 max-h-225 h-[calc(100vh-80px)] mx-auto">
+			<section className="relative max-w-440 max-h-225 h-[calc(100vh-80px)] mx-auto">
 				<div className="absolute inset-0 bg-(--main-color-blur)"></div>
 				<Image src={"/assets/images/banner_home.jpg"} alt="Construindo legados" width={1200} height={900} className="w-full h-full" />
 
@@ -38,7 +38,7 @@ export default function Home() {
 				</div>
 			</section>
 
-			<section id="quem-somos" className="relative max-w-360 mx-auto">
+			<section id="quem-somos" className="relative max-w-440 mx-auto">
 				<div className="relative flex flex-col lg:flex-row items-center gap-8 px-20 pe-10 md:pe-20 py-20 z-10">
 					<div className="flex-1 text-white">
 						<h2 className="mb-4 text-3xl">Quem somos</h2>
@@ -71,7 +71,7 @@ export default function Home() {
 				</div>
 			</section>
 
-			<section className="max-w-360 mx-auto">
+			<section className="max-w-440 mx-auto">
 				<div className="flex flex-wrap justify-center gap-16 px-4 py-12 bg-(--main-color) text-white">
 					<div className="flex flex-col items-center max-w-60">
 						<hr className="w-1/4 mb-2 border-(--secondary-color) border-3" />
@@ -112,7 +112,7 @@ export default function Home() {
 				</div>
 			</section>
 
-			<section id="nossos-servicos" className="relative max-w-360 mx-auto">
+			<section id="nossos-servicos" className="relative max-w-440 mx-auto">
 				<div className="relative flex flex-col lg:flex-row z-20">
 					<div className="relative flex-3">
 						<div className="relative px-10 py-20 z-10">
@@ -153,7 +153,7 @@ export default function Home() {
 				</div>
 			</section>
 
-			<section id="faca-seu-orcamento" className="relative max-w-360 mx-auto bg-(--main-color)">
+			<section id="faca-seu-orcamento" className="relative max-w-440 mx-auto bg-(--main-color)">
 				<div className="relative flex flex-col lg:flex-row items-center gap-8 px-14 md:px-20 py-30 text-white z-10">
 					<div>
 						<div className="flex items-center gap-2">
@@ -191,7 +191,7 @@ export default function Home() {
 							</span>
 
 							<span className="flex items-center gap-4">
-								<Image src={"/assets/icons/check.png"} alt="Vantagem 2" width={30} height={30} /> Atedimento personalizado
+								<Image src={"/assets/icons/check.png"} alt="Vantagem 2" width={30} height={30} /> Atendimento personalizado
 							</span>
 						</div>
 

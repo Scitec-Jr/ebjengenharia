@@ -4,7 +4,7 @@ import Link from "next/link";
 export default function NossaEquipe() {
 	return (
 		<main className="pt-4 bg-[url('/assets/images/equipe.png')] bg-cover bg-center">
-			<section className="max-w-360 mx-auto">
+			<section className="max-w-440 mx-auto">
 				<div className="px-4 md:px-8 lg:px-16">
 					<Link href={"/"} className="flex items-center gap-4">
 						<Image src={"/assets/icons/voltar.png"} alt="Voltar" width={30} height={30} />
