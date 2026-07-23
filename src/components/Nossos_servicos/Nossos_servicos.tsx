@@ -109,7 +109,7 @@ export default function Nossos_servicos() {
 							alt={servicoSelecionado.nome}
 							width={200}
 							height={150}
-							className={`w-full transition-opacity duration-700 ${
+							className={`w-full transition-opacity duration-700 max-h-60 ${
 								imagemTransicionando ? "opacity-0" : "opacity-100"
 							}`}
 						/>
